@@ -7,6 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="fotos/LP.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        'primary-dark': '#2E7D32',
+                        secondary: '#2196F3',
+                        'text-color': '#333',
+                        'light-bg': '#f8f9fa',
+                        'dark-bg': '#343a40',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
             scroll-behavior: smooth;
@@ -17,23 +33,23 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-    <header class="bg-blue-600 text-white py-16 text-center">
+<body class="bg-light-bg text-text-color font-sans">
+    <header class="bg-primary text-white py-16 text-center">
         <div class="container mx-auto px-4">
             <img src="fotos/Mi Foto De Perfil.jpeg" alt="Luis Pérez" class="mx-auto rounded-full w-48 h-48 mb-6 object-cover border-4 border-white shadow-lg">
             <h1 class="text-4xl font-bold mb-4">Luis Pérez</h1>
             <p class="text-xl mb-4">Desarrollador Frontend</p>
             <div class="flex justify-center space-x-4">
-                <a href="https://www.instagram.com/luisitopera/?hl=es-es" class="text-white hover:text-blue-200"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.tiktok.com/@luisitoperaa" class="text-white hover:text-blue-200"><i class="fab fa-tiktok fa-2x"></i></a>
-                <a href="https://x.com/Luisitoperaa" class="text-white hover:text-blue-200"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.instagram.com/luisitopera/?hl=es-es" class="text-white hover:text-green-200"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.tiktok.com/@luisitoperaa" class="text-white hover:text-green-200"><i class="fab fa-tiktok fa-2x"></i></a>
+                <a href="https://x.com/Luisitoperaa" class="text-white hover:text-green-200"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-12">
         <section id="about" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center">Sobre Mí</h2>
+            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Sobre Mí</h2>
             <div class="bg-white p-8 rounded-lg shadow-md">
                 <p class="text-lg leading-relaxed">
                     Soy un desarrollador web apasionado con experiencia en tecnologías frontend. Tengo algunos conocimientos de backend, pero mi punto fuerte es el frontend. Me especializo en crear aplicaciones web modernas, escalables y con excelente experiencia de usuario. Disfruto resolviendo problemas complejos y aprendiendo constantemente nuevas tecnologías.
@@ -42,7 +58,7 @@
         </section>
 
         <section id="skills" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center">Lenguajes Que Uso</h2>
+            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Lenguajes Que Uso</h2>
             <div class="grid md:grid-cols-1 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow-md hover-card">
                     <ul class="space-y-2">
@@ -56,38 +72,38 @@
         </section>
 
         <section id="projects" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center">Proyectos Destacados</h2>
+            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Proyectos Destacados</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <a href="https://proyectslpp.github.io/crunchelas/" target="_blank" class="hover-card">
                     <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-4">Crunchelas</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary-dark">Crunchelas</h3>
                         <p class="mb-4 flex-grow">Aplicación web completa con carrito de compras, contacto y pasarela de pago.</p>
                         <div class="flex space-x-3">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
                         </div>
                     </div>
                 </a>
                 <a href="https://proyectslpp.github.io/pc/pc.html" target="_blank" class="hover-card">
                     <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-4">PC Master Universe</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary-dark">PC Master Universe</h3>
                         <p class="mb-4 flex-grow">Guía interactiva sobre hardware de PC con información detallada, verificador de compatibilidad y quiz educativo."</p>
                         <div class="flex space-x-3">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
                         </div>
                     </div>
                 </a>
                 <a href="https://proyectslpp.github.io/clubdepadel/clubdepadel.html" target="_blank" class="hover-card">
                     <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-4">Club de Pádel</h3>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary-dark">Club de Pádel</h3>
                         <p class="mb-4 flex-grow">Aplicación web completa de un club de pádel, con tienda, carrito de compras, reserva de pistas, contartación de clases, y la opción de apuntarte a torneos.</p>
                         <div class="flex space-x-3">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
                         </div>
                     </div>
                 </a>
@@ -95,33 +111,61 @@
         </section>
 
         <section id="contact" class="bg-white p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold mb-6 text-center">Contacto</h2>
-            <form class="max-w-lg mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Contacto</h2>
+            <!-- Solución con Web3Forms - formulario de contacto que funciona en cualquier lugar -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-lg mx-auto" id="contact-form">
+                <!-- Reemplazar con tu Access Key de Web3Forms -->
+                <input type="hidden" name="access_key" value="c8287cac-a3ee-445b-bb9a-a40e52eb7971">
+                <input type="hidden" name="subject" value="Nuevo mensaje desde tu sitio web">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                
                 <div class="mb-4">
-                    <label class="block mb-2">Nombre</label>
-                    <input type="text" class="w-full px-3 py-2 border rounded-lg" placeholder="Tu nombre">
+                    <label for="nombre" class="block mb-2">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="w-full px-3 py-2 border rounded-lg" placeholder="Tu nombre" required>
                 </div>
                 <div class="mb-4">
-                    <label class="block mb-2">Email</label>
-                    <input type="email" class="w-full px-3 py-2 border rounded-lg" placeholder="Tu email">
+                    <label for="email" class="block mb-2">Email</label>
+                    <input type="email" name="email" id="email" class="w-full px-3 py-2 border rounded-lg" placeholder="Tu email" required>
                 </div>
                 <div class="mb-4">
-                    <label class="block mb-2">Mensaje</label>
-                    <textarea class="w-full px-3 py-2 border rounded-lg" rows="4" placeholder="Tu mensaje"></textarea>
+                    <label for="mensaje" class="block mb-2">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" class="w-full px-3 py-2 border rounded-lg" rows="4" placeholder="Tu mensaje" required></textarea>
                 </div>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                <div class="mb-4">
+                    <!-- Captcha simple para evitar spam -->
+                    <label for="botcheck" class="sr-only">No completar si eres humano</label>
+                    <input type="checkbox" name="botcheck" id="botcheck" class="hidden" style="display: none;">
+                </div>
+                <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition duration-300">
                     Enviar Mensaje
                 </button>
+                <!-- Sistema de mensaje de éxito sin necesidad de JS -->
+                <div id="success-message" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
+                    ¡Gracias por tu mensaje! Te responderé lo antes posible.
+                </div>
             </form>
+            
+            <!-- Alternativa: Botones de contacto directo -->
+            <div class="mt-8 text-center">
+                <p class="text-lg mb-4">O contáctame directamente:</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:luisperezpuerta2019@gmail.com" class="flex items-center text-primary hover:text-primary-dark">
+                        <i class="fas fa-envelope mr-2"></i> Email
+                    </a>
+                    <a href="https://wa.me/34628685155" class="flex items-center text-primary hover:text-primary-dark">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-8 text-center">
+    <footer class="bg-dark-bg text-white py-8 text-center">
         <p>&copy; 2025 Luis Pérez. Todos los derechos reservados.</p>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation
+        // Script para el desplazamiento suave
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -129,6 +173,50 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Solución temporal: Mostrar confirmación en la misma página sin enviar realmente
+        const form = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        
+        form.addEventListener('submit', function(e) {
+            // Si la página se ejecuta localmente, mostramos un mensaje de éxito falso
+            if (window.location.protocol === 'file:') {
+                e.preventDefault();
+                
+                // Feedback visual
+                let submitButton = form.querySelector('button[type="submit"]');
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Enviando...';
+                
+                // Simulamos un retardo para imitar el envío
+                setTimeout(() => {
+                    // Resetear formulario
+                    form.reset();
+                    
+                    // Mostrar mensaje de éxito
+                    successMessage.classList.remove('hidden');
+                    
+                    // Restaurar botón
+                    submitButton.innerHTML = 'Enviar Mensaje';
+                    
+                    // Ocultar mensaje después de 5 segundos
+                    setTimeout(() => {
+                        successMessage.classList.add('hidden');
+                    }, 5000);
+                }, 1500);
+            }
+            // Si estamos en un servidor web, el formulario se envía normalmente
+        });
+
+        // Verificación de entorno
+        window.addEventListener('DOMContentLoaded', function() {
+            if (window.location.protocol === 'file:') {
+                console.log('Ejecutando en entorno local. El formulario simulará el envío.');
+                // Añadir mensaje de información
+                const infoMessage = document.createElement('div');
+                infoMessage.className = 'mt-2 text-xs text-gray-500';
+                form.appendChild(infoMessage);
+            }
         });
     </script>
 </body>
