@@ -1,225 +1,396 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Pérez - Programador</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="fotos/LP.png">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#4CAF50',
-                        'primary-dark': '#2E7D32',
-                        secondary: '#2196F3',
-                        'text-color': '#333',
-                        'light-bg': '#f8f9fa',
-                        'dark-bg': '#343a40',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            scroll-behavior: smooth;
-        }
-        .hover-card:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Pérez</title>
+  <link rel="icon" type="image/x-icon" href="Fotos/favicon.png">
+  <link rel="stylesheet" href="estilos.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+
 </head>
-<body class="bg-light-bg text-text-color font-sans">
-    <header class="bg-primary text-white py-16 text-center">
-        <div class="container mx-auto px-4">
-            <img src="fotos/Mi Foto De Perfil.jpeg" alt="Luis Pérez" class="mx-auto rounded-full w-48 h-48 mb-6 object-cover border-4 border-white shadow-lg">
-            <h1 class="text-4xl font-bold mb-4">Luis Pérez</h1>
-            <p class="text-xl mb-4">Desarrollador Frontend</p>
-            <div class="flex justify-center space-x-4">
-                <a href="https://www.instagram.com/luisitopera/?hl=es-es" class="text-white hover:text-green-200"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.tiktok.com/@luisitoperaa" class="text-white hover:text-green-200"><i class="fab fa-tiktok fa-2x"></i></a>
-                <a href="https://x.com/Luisitoperaa" class="text-white hover:text-green-200"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
+<body>
+  <div class="container">
+    <nav class="nav-mobile">
+      <div class="navbar-brand">
+        <img src="Fotos/Foto De Perfil.jpg" alt="" class="brand-img">
+        <h1 class="brand-name">Luis Pérez</h1>
+      </div>
+      <ion-icon name="menu-outline" class="menu-toggler"></ion-icon>
+    </nav>
+    <div class="side-bar">
+      <img src="Fotos/Foto De Perfil.jpg" alt="" class="brand-img">
+      <h1 class="brand-name">Luis <br>Pérez</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#" class="active">Sobre Mí</a></li>
+          <li><a href="#">Resumen</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="social-btn-groups">
+        <a href="https://l1nk.dev/cesLJ" class="btn">
+          <ion-icon name="logo-Instagram"></ion-icon>
+        </a>
+        <a href="https://www.tiktok.com/@luisitoperaa" class="btn">
+          <ion-icon name="logo-TikTok"></ion-icon>
+        </a>
+        <a href="https://x.com/Luisitoperaa" class="btn">
+          <ion-icon name="logo-Twitter"></ion-icon>
+        </a>
+      </div>
+      <footer class="side-bar-footer">
+        <p class="copyright">&copy; 2025 Todos Los Derechos Reservados.</p>
+      </footer>
+    </div>
+    <section class="about page active">
+      <div class="hero">
+        <div class="hero-img-bx">
+          <img src="Fotos/Foto De Perfil.jpg" alt="">
         </div>
-    </header>
-
-    <main class="container mx-auto px-4 py-12">
-        <section id="about" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Sobre Mí</h2>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <p class="text-lg leading-relaxed">
-                    Soy un desarrollador web apasionado con experiencia en tecnologías frontend. Tengo algunos conocimientos de backend, pero mi punto fuerte es el frontend. Me especializo en crear aplicaciones web modernas, escalables y con excelente experiencia de usuario. Disfruto resolviendo problemas complejos y aprendiendo constantemente nuevas tecnologías.
-                </p>
+        <div class="hero-content">
+          <div class="hero-content-wrapper">
+            <p class="title">Desarrollador Web</p>
+            <h1 class="name">Luis Pérez</h1>
+            <div class="desc">
+              <p>Me llamo Luis, tengo 13 años y soy un desarrollador web apasionado, especializado en frontend. Aunque tengo algunos conocimientos en backend, mi fuerte es crear aplicaciones web modernas y escalables, con un enfoque en la experiencia de usuario. Me gusta resolver problemas complejos y trabajar en proyectos que me permitan mejorar mis habilidades.</p>
+              <p>Además de desarrollar, diseño logos, miniaturas y webs. Me encanta explorar nuevas ideas y herramientas para crear diseños visualmente atractivos y funcionales. Siempre estoy aprendiendo y buscando maneras de mejorar mis habilidades, manteniéndome actualizado con las últimas tendencias en tecnología y diseño.</p>
             </div>
-        </section>
-
-        <section id="skills" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Lenguajes Que Uso</h2>
-            <div class="grid md:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md hover-card">
-                    <ul class="space-y-2">
-                        <li>• HTML 5</li>
-                        <li>• CSS</li>
-                        <li>• JavaScript</li>
-                        <li>• Python</li>
-                        <li>• Tailwind CSS</li>
-                    </ul>
-                </div>
+            <a href="Currículum.pdf" class="btn-primary">Descargar CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-inner">
+        <div class="service">
+          <h2>Que He Hecho</h2>
+          <div class="grid-item">
+            <div class="item">
+              <div class="item-icon">
+                <ion-icon name="storefront-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                <h3>Tiendas Online</h3>
+                <p>Transformo tu idea en una tienda online funcional y atractiva. Desarrollo plataformas de e-commerce con integración de pagos, gestión de productos y un diseño optimizado para ofrecer la mejor experiencia de compra.</p>
+              </div>
             </div>
-        </section>
-
-        <section id="projects" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Proyectos Destacados</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="https://proyectslpp.github.io/crunchelas/" target="_blank" class="hover-card">
-                    <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary-dark">Crunchelas</h3>
-                        <p class="mb-4 flex-grow">Aplicación web completa con carrito de compras, contacto y pasarela de pago.</p>
-                        <div class="flex space-x-3">
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://proyectslpp.github.io/pc/pc.html" target="_blank" class="hover-card">
-                    <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary-dark">PC Master Universe</h3>
-                        <p class="mb-4 flex-grow">Guía interactiva sobre hardware de PC con información detallada, verificador de compatibilidad y quiz educativo.</p>
-                        <div class="flex space-x-3">
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://proyectslpp.github.io/GeneradorWeb-Pro/GeneradorWeb%20Pro.html" target="_blank" class="hover-card">
-                    <div class="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-4 text-primary-dark">GeneradorWeb Pro</h3>
-                        <p class="mb-4 flex-grow">Un generador de páginas web en Python que crea sitios básicos rápidamente, generando automáticamente archivos HTML, CSS y JavaScript a partir de plantillas personalizables, ideal para quienes desean crear páginas sin escribir todo el código manualmente.</p>
-                        <div class="flex space-x-3">
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">JavaScript</span>
-                            <span class="bg-green-100 text-primary-dark px-3 py-1 rounded-full text-sm">Python</span>
-                        </div>
-                    </div>
-                </a>
+            <div class="item">
+              <div class="item-icon">
+                <ion-icon name="reader-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                <h3>Páginas Web Completas</h3>
+                <p>Creo páginas web modernas, responsivas y optimizadas para SEO. Ya sea un sitio corporativo o un portafolio personal, me encargo de todo el diseño y desarrollo para que tu web destaque en internet.</p>
+              </div>
             </div>
-        </section>
-
-        <section id="contact" class="bg-white p-8 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold mb-6 text-center text-primary">Contacto</h2>
-            <!-- Solución con Web3Forms - formulario de contacto que funciona en cualquier lugar -->
-            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-lg mx-auto" id="contact-form">
-                <!-- Reemplazar con tu Access Key de Web3Forms -->
-                <input type="hidden" name="access_key" value="c8287cac-a3ee-445b-bb9a-a40e52eb7971">
-                <input type="hidden" name="subject" value="Nuevo mensaje desde tu sitio web">
-                <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                
-                <div class="mb-4">
-                    <label for="nombre" class="block mb-2">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" class="w-full px-3 py-2 border rounded-lg" placeholder="Tu nombre" required>
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block mb-2">Email</label>
-                    <input type="email" name="email" id="email" class="w-full px-3 py-2 border rounded-lg" placeholder="Tu email" required>
-                </div>
-                <div class="mb-4">
-                    <label for="mensaje" class="block mb-2">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" class="w-full px-3 py-2 border rounded-lg" rows="4" placeholder="Tu mensaje" required></textarea>
-                </div>
-                <div class="mb-4">
-                    <!-- Captcha simple para evitar spam -->
-                    <label for="botcheck" class="sr-only">No completar si eres humano</label>
-                    <input type="checkbox" name="botcheck" id="botcheck" class="hidden" style="display: none;">
-                </div>
-                <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition duration-300">
-                    Enviar Mensaje
-                </button>
-                <!-- Sistema de mensaje de éxito sin necesidad de JS -->
-                <div id="success-message" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
-                    ¡Gracias por tu mensaje! Te responderé lo antes posible.
-                </div>
-            </form>
-            
-            <!-- Alternativa: Botones de contacto directo -->
-            <div class="mt-8 text-center">
-                <p class="text-lg mb-4">O contáctame directamente:</p>
-                <div class="flex justify-center space-x-6">
-                    <a href="mailto:luisperezpuerta2019@gmail.com" class="flex items-center text-primary hover:text-primary-dark">
-                        <i class="fas fa-envelope mr-2"></i> Email
-                    </a>
-                    <a href="https://wa.me/34628685155" class="flex items-center text-primary hover:text-primary-dark">
-                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
-                    </a>
-                </div>
+            <div class="item">
+              <div class="item-icon">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                <h3>Diseño Web</h3>
+                <p>Me especializo en crear interfaces atractivas e intuitivas. Diseño páginas web que no solo se ven bien, sino que también ofrecen una experiencia de usuario fluida y efectiva en cualquier dispositivo.</p>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="item">
+              <div class="item-icon">
+                <ion-icon name="file-tray-stacked-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                <h3>Diseños</h3>
+                <p>Más que solo imágenes, diseño identidad. Creo logos, banners, miniaturas y todo lo que necesitas para mejorar la presencia visual de tu marca en el mundo digital.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials">
+          <h2>Testimonios</h2>
+          <div class="testimonials-row">
+            <div class="testimonials-content">
+              <div class="testimonials-text">
+                <blockquote><i>Un chico muy majo, buen profesional, sin duda lo recomiendo. Me ayudó y perfeccionó todo lo de mi empresa.</i></blockquote>
+              </div>
+              <div class="testimonials-author">
+                <img src="Fotos/Juan Alberto.png" alt="Juan Alberto" class="author-img">
+                <div class="author-info">
+                  <h4 class="author-name">Juan Alberto</h4>
+                  <p class="author-title">Empresario</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-content">
+              <div class="testimonials-text">
+                <blockquote><i>Un muy buen profesional, sin duda lo recomiendo.</i></blockquote>
+              </div>
+              <div class="testimonials-author">
+                <img src="Fotos/Pepe Rodriguez.jpg" alt="" class="author-img">
+                <div class="author-info">
+                  <h4 class="author-name">Pepe Rodriguez</h4>
+                  <p class="author-title">Desarrollador Web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="resume page">
+      <h1 class="section-heading">Resumen</h1>
+      <h4 class="section-sub-heading">.</h4>
+      <div class="resume-row">
+        <div class="wrapper">
+          <div class="edu">
+            <h2>Educación</h2>
+            <div class="grid-item">
+              <h4 class="year">2017-2023</h4>
+              <h4 class="edu-name">Primaria</h4>
+              <p class="company">Colegio Litterator</p>
+              <p class="edu-desc">En primaria empecé ya a tener mi primer contacto con la tecnología, y al final de mi etapa por primaria, ya sabía muchímo de tecnología para mi edad. Acabé primaria con una media alta.
+              <div class="divider"></div>
+            </div>
+            <div class="grid-item">
+              <h4 class="year">2023-Actualmente</h4>
+              <h4 class="edu-name">ESO</h4>
+              <p class="company">Colegio Litterator</p>
+              <p class="edu-desc">Actualmente estoy en segundo de la ESO. Aquí estoy en varias asignaturas de programación que es de donde he aprendido el 50% de mis conocimientos.</p>
+              <div class="divider"></div>
+            </div>
+            <div class="grid-item">
+                <h4 class="year">2021-2025</h4>
+                <h4 class="edu-name">Cursos</h4>
+                <p class="company">En Casa</p>
+                <p class="edu-desc">He realizado varios cursos de programación, en el 90% he conseguido la mayor nota posible, y en el otro 10% he conseguido una muy alta. Los cursos que he hecho han sido de: HTML, CSS, JavaScript y Python.</p>
+                <div class="divider"></div>
+              </div>
+          </div>
+          <div class="exp">
+            <h2>Mejores Proyectos</h2>
+            <div class="grid-item">
+              <h4 class="year">2025</h4>
+              <h4 class="exp-name">Generador Web Pro</h4>
+              <p class="company">Freelance</p>
+              <p class="exp-desc">Un generador de páginas web en Python que crea sitios básicos rápidamente, generando automáticamente archivos HTML, CSS y JavaScript a partir de plantillas personalizables, ideal para quienes desean crear páginas sin escribir todo el código manualmente.</p>
+              <div class="divider"></div>
+            </div>
+            <div class="grid-item">
+              <h4 class="year">2025</h4>
+              <h4 class="exp-name">Tabla Periódica Interactiva</h4>
+              <p class="company">Freelance</p>
+              <p class="exp-desc">He creado una web de una tabla periódica interactiva, en la que se muestran los 118 elementos ordenados correctamente, con sus correspondientes colores y al hacer click se muestra mucha información detallada de cada elemento.</p>
+              <div class="divider"></div>
+            </div>
+            <div class="grid-item">
+              <h4 class="year">2025 </h4>
+              <h4 class="exp-name">PC Master Universe</h4>
+              <p class="company">Freelance</p>
+              <p class="exp-desc">Guía interactiva sobre hardware de PC con información detallada, verificador de compatibilidad y quiz educativo.</p>
+              <div class="divider"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="design-skill">
+            <h2>Skills de Diseño</h2>
+            <div class="progress-detail">
+              <div class="progress-name">Diseño Web</div>
+              <div class="progress-percent">95%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%"></div>
+            </div>
+            <div class="progress-detail">
+              <div class="progress-name">Animaciones Webs</div>
+              <div class="progress-percent">75%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+            <div class="progress-detail">
+              <div class="progress-name">Diseñador de Logos</div>
+              <div class="progress-percent">70%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+            <div class="progress-detail">
+              <div class="progress-name">Diseñador de Miniaturas</div>
+              <div class="progress-percent">55%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 55%"></div>
+            </div>
+          </div>
+          <div class="coding-skill">
+            <h2>Skills de Código</h2>
+            <div class="progress-detail">
+              <div class="progress-name">JavaScript</div>
+              <div class="progress-percent">90%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+            <div class="progress-detail">
+              <div class="progress-name">Python</div>
+              <div class="progress-percent">60%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+            <div class="progress-detail">
+              <div class="progress-name">HTML/CSS</div>
+              <div class="progress-percent">100%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%"></div>
+            </div>
+            <div class="progress-detail">
+              <div class="progress-name">Bootstrap</div>
+              <div class="progress-percent">95%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-primary">Descargar CV</a>
+    </section>
+    <section class="portfolio page">
+      <h1 class="section-heading">Proyectos</h1>
+      <h4 class="section-sub-heading">Mis Proyectos</h4>
+      <ul class="filter-box">
+        <li class="filter-item active">Todos</li>
+        <li class="filter-item">Productivo</li>
+        <li class="filter-item">Educativo</li>
+        <li class="filter-item">Social</li>
+        <li class="filter-item">Informativo</li>
+      </ul>
+      <div class="portfolio-items-group">
+        <a href="https://proyectslpp.github.io/GeneradorWeb-Pro/GeneradorWeb%20Pro.html" class="portfolio-item active">
+          <img src="Fotos/Logo_GeneradorWeb Pro.png" alt="GeneradorWeb Pro" class="item-img">
+          <h4 class="item-name">GeneradorWeb Pro</h4>
+          <div class="item-category">Productivo</div>
+        </a>
+        <a href="https://proyectslpp.github.io/Tabla-Peri-dica/tablaperiodica.html" class="portfolio-item active">
+          <img src="Fotos/Logo_tablaperiodica.png" alt="Tabla Periódica Interactiva" class="item-img">
+          <h4 class="item-name">Tabla Periódica Interactiva</h4>
+          <div class="item-category">Educativo</div>
+        </a>
+        <a href="https://proyectslpp.github.io/pc/pc.html" class="portfolio-item active">
+          <img src="Fotos/Logo_PCMasterUniverse.webp" alt="PC Master Universe" class="item-img">
+          <h4 class="item-name">PC Master Universe</h4>
+          <div class="item-category">Educativo</div>
+        </a>
+        <a href="https://diegoomoolina.github.io/DiegoMolina/diegomolina.html" class="portfolio-item active">
+          <img src="Fotos/Diego_Molina_Logo.jpg" alt="Diego Molina" class="item-img">
+          <h4 class="item-name">Diego Molina</h4>
+          <div class="item-category">Social</div>
+        </a>
+        <a href="https://proyectslpp.github.io/Ejecuta-Tu-Codigo/vistapreviacodigo.html" class="portfolio-item active">
+          <img src="Fotos/Logo_Ejecuta_Tu_Codigo.webp" alt="Ejecuta Tu Código" class="item-img">
+          <h4 class="item-name">Ejecuta Tu Código</h4>
+          <div class="item-category">Productivo</div>
+        </a>
+        <a href="https://notiflash.github.io/NotiFlash/NotiFlash.html" class="portfolio-item active">
+          <img src="Fotos/Logo_NotiFlash.png" alt="NotiFlash" class="item-img">
+          <h4 class="item-name">NotiFlash</h4>
+          <div class="item-category">Informativo</div>
+        </a>
+      </div>
+    </section>
+    <section class="services page">
+      <h1 class="section-heading">Servicios</h1>
+      <h4 class="section-sub-heading">Lo que ofrezco</h4>
+      <div class="grid-item">
+        <div class="item">
+          <div class="item-icon">
+            <ion-icon name="globe-outline"></ion-icon>
+          </div>
+          <div class="item-wrapper">
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web modernos, responsivos y optimizados para la mejor experiencia del usuario.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-icon">
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+          <div class="item-wrapper">
+            <h3>Tiendas Online</h3>
+            <p>Configuración y desarrollo de plataformas de e-commerce con integración de pagos y gestión de productos.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-icon">
+            <ion-icon name="brush-outline"></ion-icon>
+          </div>
+          <div class="item-wrapper">
+            <h3>Diseño Gráfico</h3>
+            <p>Diseño de logos, branding y contenido visual para mejorar la identidad de tu marca.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-icon">
+            <ion-icon name="megaphone-outline"></ion-icon>
+          </div>
+          <div class="item-wrapper">
+            <h3>Marketing Digital</h3>
+            <p>Estrategias de marketing online para aumentar la visibilidad y el alcance de tu negocio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="services-contact">
+        <p>Para contratar cualquier servicio, <a href="#" class="contact-link">contáctame</a>.</p>
+      </div>
+    </section>
+<section class="contact page">
+    <h1 class="section-heading">Contacto</h1>
+    <h4 class="section-sub-heading">Contáctame</h4>
+  
+    <div class="contact-info">
+      <div class="info-box">
+        <ion-icon name="call-outline"></ion-icon>
+        <p>+34 628 68 51 55</p>
+      </div>
+      <div class="info-box">
+        <ion-icon name="location-outline"></ion-icon>
+        <p>Madrid</p>
+      </div>
+      <div class="info-box">
+        <ion-icon name="mail-outline"></ion-icon>
+        <p>luisperezpuerta2019@gmail.com</p>
+      </div>
+      <div class="info-box">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <p>Disponible para contratar</p>
+      </div>
+    </div>
+  
+    <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-    <footer class="bg-dark-bg text-white py-8 text-center">
-        <p>&copy; 2025 Luis Pérez. Todos los derechos reservados.</p>
-    </footer>
-
-    <script>
-        // Script para el desplazamiento suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Solución temporal: Mostrar confirmación en la misma página sin enviar realmente
-        const form = document.getElementById('contact-form');
-        const successMessage = document.getElementById('success-message');
+            <input type="hidden" name="access_key" value="a62551ec-3f1c-48dc-ba01-8fc12afc7f06">
         
-        form.addEventListener('submit', function(e) {
-            // Si la página se ejecuta localmente, mostramos un mensaje de éxito falso
-            if (window.location.protocol === 'file:') {
-                e.preventDefault();
-                
-                // Feedback visual
-                let submitButton = form.querySelector('button[type="submit"]');
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Enviando...';
-                
-                // Simulamos un retardo para imitar el envío
-                setTimeout(() => {
-                    // Resetear formulario
-                    form.reset();
-                    
-                    // Mostrar mensaje de éxito
-                    successMessage.classList.remove('hidden');
-                    
-                    // Restaurar botón
-                    submitButton.innerHTML = 'Enviar Mensaje';
-                    
-                    // Ocultar mensaje después de 5 segundos
-                    setTimeout(() => {
-                        successMessage.classList.add('hidden');
-                    }, 5000);
-                }, 1500);
-            }
-            // Si estamos en un servidor web, el formulario se envía normalmente
-        });
-
-        // Verificación de entorno
-        window.addEventListener('DOMContentLoaded', function() {
-            if (window.location.protocol === 'file:') {
-                console.log('Ejecutando en entorno local. El formulario simulará el envío.');
-                // Añadir mensaje de información
-                const infoMessage = document.createElement('div');
-                infoMessage.className = 'mt-2 text-xs text-gray-500';
-                form.appendChild(infoMessage);
-            }
-        });
-    </script>
+            <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="Email" placeholder="Tu Email" required>
+            <input type="subject" name="Asunto" placeholder="Asunto" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+        
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+        
+            <button type="submit">Enviar Mensaje</button>
+        
+        </form>
+    </div>
+  </section>
+  </div>
+  <script src="main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
